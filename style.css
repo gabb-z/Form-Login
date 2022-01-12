@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 26px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #5433ff, #20bdff, #a5fecb);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="submit"]{
+    padding: 0.4rem;
+    margin-top: 2rem;
+    background-color: royalblue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 00.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: background 0.3s linear;
+}
+
+form input[type="submit"]:hover{
+    background-color: rgb(81, 125, 255);
+}
+
+form .campo-input:first-child{
+    margin-bottom: 1.5rem;
+}
+
+.container{
+    background-color: white;
+    width: 350px;
+    height: 60vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.campo-input{
+    position: relative;
+}
+
+.campo-input input{
+    outline: none;
+    border: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.campo-input input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.rodape span{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.rede-social{
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.redes-sociais a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes-sociais a i{
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.twitter{
+    background: linear-gradient(to right, #56a7f2, #468aca);
+}
+
+.facebook{
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
